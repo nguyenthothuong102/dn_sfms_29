@@ -2042,11 +2042,11 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 .header-top {
   font-size: 12px;
-  padding: 6px 0px;
+  background-color: #696969;
 }
 
 .header-top a {
-  color: #fff;
+  color: black;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -2077,7 +2077,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header-top .header-top-right .header-social a {
-  color: #fff;
+  color: black;
   margin-left: 15px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -2097,7 +2097,7 @@ h1, h2, h3, h4, h5, h6 {
 .main-menu {
   padding-bottom: 20px;
   padding-top: 20px;
-  background: rgba(150, 255, 200, 0.20);
+  background: #DCDCDC;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -2488,7 +2488,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .banner-area .overlay-bg {
-  background: rgba(4, 8, 20, 0.4);
+  background: rgba(4, 8, 0, 0.1);
 }
 
 @media (max-width: 767px) {
@@ -2496,6 +2496,23 @@ body.mobile-nav-active #mobile-nav-toggle {
     height: auto !important;
   }
 }
+
+/*-------- Start Banner Area ---login---*/
+.banner-area2 {
+  background: url(login1.jpg) center;
+  background-size: cover;
+}
+
+.banner-area2 .overlay-bg {
+  background: rgba(4, 8, 0, 0.1);
+}
+
+@media (max-width: 767px) {
+  .banner-area2 .fullscreen {
+    height: auto !important;
+  }
+}
+
 
 .banner-left h6 {
   text-transform: uppercase;
@@ -4498,8 +4515,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   width: 250px;
   height: 120px;
 }
-.header-nav1 ul li{
-  padding-right: 70px;}
 .pagination{
-  padding-left:120px;
+  margin: 0 auto;
+  margin-left: 140px
+}
+.header-social li{
+  list-style-type: none;
+}
+
+.header-nav1 ul li{
+  padding-right: 70px;
 }

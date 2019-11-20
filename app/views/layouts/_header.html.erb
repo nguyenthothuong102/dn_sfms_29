@@ -11,18 +11,37 @@
       <li class="nav-item active"><%= link_to t(".about"), about_path, class: "nav-link" %></li>
       <li class="nav-item active"><%= link_to t(".blog"), blog_path, class: "nav-link" %></li>
       <li class="nav-item active"><%= link_to t(".contact"), contact_path, class: "nav-link" %></li>
+      <% if logged_in? %>
       <li class="nav-item dropdown" style="float:right;position: absolute;right:0">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <% t(".language") %>
+          <%= t(".hello") %> <%= current_user.full_name %>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <ul>
-            <li><%= link_to t(".login") %></li>
-            <li><%= link_to t(".register") %></li>
+            <li><%= link_to "Manager profile", user_path(current_user), class: "dropdown-item" %></li>
+            <li><%= link_to "Logout", logout_path, class: "dropdown-item" %></li>
           </ul>
         </div>
+          <% else %>
+            <ul style="position: absolute; right:200px">
+              <%= link_to t(".login"), login_path, class: "dropdown-item" %>
+            </ul>
+            <ul style="position: absolute; right:120px">
+              <%= link_to t(".register"), signup_path, class: "dropdown-item"  %>
+            </ul>
       </li>
+      <% end %>
     </ul>
   </div>
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <%= t(".english") %>
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <%= link_to t(".lang_vi"), locale:"vi", class: "dropdown-item" %>
+      <div class="clear"></div>
+      <%= link_to t(".lang_en"), locale:"en", class: "dropdown-item" %>
+    </div>
+</div>
 </nav>
 </header>

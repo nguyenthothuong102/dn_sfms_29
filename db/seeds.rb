@@ -1,4 +1,3 @@
-
 # User.create(full_name: "Example User", phone: "0964991298")
 # Pitch.create(name: "San bong 1", description: "Ok", country: "Viet nam", city: "Da Nang", district: "Hai Chau", address: "16 Ly Thuong Kiet", start_time: "8:00", end_time: "9:00", limit: "1")
 # Pitch.create!({name: "San bong 1", user_id: 1, description: "Ok", country: "Viet nam", city: "Da Nang", district: "Hai Chau", address: "16 Ly Thuong Kiet", start_time: "8:00", end_time: "9:00", limit: "1"})
