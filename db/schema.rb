@@ -10,25 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_19_090655) do
+ActiveRecord::Schema.define(version: 2019_11_19_090445) do
 
-  create_table "bookings", force: :cascade do |t|
-    t.integer "user_id", null: false
-    t.integer "subpitch_id", null: false
+  create_table "bookings", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "subpitch_id", null: false
     t.datetime "start_time"
     t.datetime "end_time"
     t.string "message"
     t.integer "status"
-    t.decimal "total_price"
+    t.decimal "total_price", precision: 10
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["subpitch_id"], name: "index_bookings_on_subpitch_id"
     t.index ["user_id"], name: "index_bookings_on_user_id"
   end
 
-  create_table "comments", force: :cascade do |t|
-    t.integer "user_id", null: false
-    t.integer "subpitch_id", null: false
+  create_table "comments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "subpitch_id", null: false
     t.integer "id_parent"
     t.text "content"
     t.datetime "created_at", precision: 6, null: false
@@ -37,17 +37,17 @@ ActiveRecord::Schema.define(version: 2019_11_19_090655) do
     t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
-  create_table "likes", force: :cascade do |t|
-    t.integer "user_id", null: false
-    t.integer "subpitch_id", null: false
+  create_table "likes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "subpitch_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["subpitch_id"], name: "index_likes_on_subpitch_id"
     t.index ["user_id"], name: "index_likes_on_user_id"
   end
 
-  create_table "pitches", force: :cascade do |t|
-    t.integer "user_id", null: false
+  create_table "pitches", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+    t.bigint "user_id", null: false
     t.string "name"
     t.string "description"
     t.string "country"
@@ -64,9 +64,9 @@ ActiveRecord::Schema.define(version: 2019_11_19_090655) do
     t.index ["user_id"], name: "index_pitches_on_user_id"
   end
 
-  create_table "ratings", force: :cascade do |t|
-    t.integer "user_id", null: false
-    t.integer "booking_id", null: false
+  create_table "ratings", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "booking_id", null: false
     t.integer "star"
     t.text "content"
     t.datetime "created_at", precision: 6, null: false
@@ -75,30 +75,30 @@ ActiveRecord::Schema.define(version: 2019_11_19_090655) do
     t.index ["user_id"], name: "index_ratings_on_user_id"
   end
 
-  create_table "subpitch_types", force: :cascade do |t|
+  create_table "subpitch_types", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.string "name"
     t.string "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "subpitches", force: :cascade do |t|
+  create_table "subpitches", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.string "name"
     t.string "description"
     t.integer "status"
-    t.integer "pitch_id", null: false
-    t.decimal "price_per_hour"
+    t.bigint "pitch_id", null: false
+    t.decimal "price_per_hour", precision: 10
     t.string "currency"
     t.text "picture"
     t.string "size"
-    t.integer "subpitch_id", null: false
+    t.bigint "subpitch_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["pitch_id"], name: "index_subpitches_on_pitch_id"
     t.index ["subpitch_id"], name: "index_subpitches_on_subpitch_id"
   end
 
-  create_table "users", force: :cascade do |t|
+  create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.string "avatar"
     t.boolean "activated"
     t.string "activated_digest"

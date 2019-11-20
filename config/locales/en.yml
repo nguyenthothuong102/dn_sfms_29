@@ -26,6 +26,9 @@ en:
       news: "News"
       content2: "Millions of people come to the stadium to watch their favorite team matches, and millions more to watch via television if they can't get to the stadium"
   static_pages:
+    home:
+      soccer_update: "Soccer field is new updated"
+      address: "Address: "
     about:
       about: "About"
       text_html: "Football or Soccer (English-English: Football, American-English: Soccer) is a team sport played between two teams."

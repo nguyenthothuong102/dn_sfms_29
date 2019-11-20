@@ -26,6 +26,9 @@ vi:
       news: "Bản tin"
       content2: "Hàng triệu người đến sân vận động để xem các trận thi đấu có đội bóng mà họ yêu thích, và hàng triệu người khác theo dõi qua tivi nếu không thể đến sân vận động."
   static_pages:
+    home:
+      soccer_update: "Sân bóng đá được cập nhật mới nhất"
+      address: "Địa chỉ: "
     about:
       about: "Giới thiệu"
       text_html: "Bóng đá hay Túc cầu (tiếng Anh-Anh: Football, tiếng Anh-Mỹ: Soccer) là môn thể thao đồng đội được chơi giữa hai đội với nhau."
