@@ -1,5 +1,51 @@
 en:
+  helpers:
+    label:
+      user:
+        full_name: "Full name"
+        email: "Email address"
+        password: "Password"
+        password_confirmation: "Confirmation password"
+      session:
+        email: "Email"
+        password: "Password"
+        danger: "Account creation failed!"
+      pitch:
+        address: "ADDRESS"
+        start_time: "Start time"
+        end_time: "End time"
+        city: "City"
+        district: "District"
+    submit:
+      user:
+        create: "Create account"
+        update: "Update"
+      pitch:
+        search_pitch: "Search pitch"
   layouts:
+    admin:
+      sidebar:
+        home: "Home"
+        new: "NEW"
+        manage: "Manage"
+        link1: "Link1"
+        link2: "Link2"
+      header:
+        admin: "Admin"
+        home: "Home"
+        users: "Users"
+        settings: "Settings"
+        vn: "Vietnamese"
+        en: "English"
+        profile: "Profile"
+        lock: "Lock Account"
+        logout: "Logout"
+        hello: "Hello: "
+        english: "English"
+      footer:
+        link: "CoreUI"
+        content1_html: "&copy; 2019 creativeLabs."
+        content2_html: "Powered by&nbsp;"
     application:
       title: "Quick schedule of football field"
     header:
@@ -26,6 +72,11 @@ en:
       news: "News"
       content2: "Millions of people come to the stadium to watch their favorite team matches, and millions more to watch via television if they can't get to the stadium"
   static_pages:
+    home:
+      soccer_update: "Soccer field is new updated"
+      address: "Address: "
+      pitch: "Pitch"
+      soccer_update: "Soccer field is new updated"
     about:
       about: "About"
       text_html: "Football or Soccer (English-English: Football, American-English: Soccer) is a team sport played between two teams."
@@ -35,4 +86,22 @@ en:
     contact:
       contact: "Contact"
       text1: "Football or Soccer (English-English: Football, American-English: Soccer) is a team sport played between two teams."
-
+  users:
+    new:
+      update: "Update"
+      text1: "Sign in"
+    create:
+     welcome_user: "Register account successfly!"
+  sessions:
+    new:
+      sign_up: "Sign up"
+      log_in: "Log in"
+  user:
+    success: "Success!"
+    danger: "Failed!"
+  pitches:
+    search_soccer:
+      address: "Address: "
+    index:
+      address: "Address: "
+      notification: "There are no valid football fields!"

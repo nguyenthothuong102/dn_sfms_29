@@ -1,0 +1,15 @@
+<div class="" style="padding-top: 50px;padding-bottom: 50px">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <h1 style="text-align: center;color: white"><%= t(".log_in") %></h1>
+      <%= form_for(:session, url: login_path) do |f| %>
+        <%= f.label :email %>
+        <%= f.email_field :email, class: 'form-control' %>
+        <%= f.label :password %>
+        <%= f.password_field :password, class: 'form-control' %>
+        <%= link_to t(".sign_up"), signup_path %></p>
+        <%= f.submit t(".log_in"), class: "btn btn-primary" %>
+      <% end %>
+    </div>
+  </div>
+</div>

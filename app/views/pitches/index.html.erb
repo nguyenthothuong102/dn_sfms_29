@@ -1,0 +1,14 @@
+<div class="banner-area2 relative">
+  <div class="overlay overlay-bg"></div>
+  <div class="container">
+    <div class="row fullscreen align-items-center justify-content-between">
+    </div>
+  </div>
+  <div class="row" style="padding-top: 150px">
+    <%= render "search_soccer" %>
+  <div style="margin: 0 auto;color: red;background: white">
+    <%= t(".notification") unless @pitches.present? %>
+  </div>
+</div>
+ <%= will_paginate @pitches %>
+</div>

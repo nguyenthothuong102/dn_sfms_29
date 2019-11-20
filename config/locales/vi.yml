@@ -1,5 +1,50 @@
 vi:
+  helpers:
+    label:
+      user:
+        full_name: "Tên đầy đủ"
+        email: "Địa chỉ email"
+        password: "Mật khẩu"
+        password_confirmation: "Nhập lại mật khẩu"
+      session:
+        email: "Email"
+        password: "Mật khẩu"
+        danger: "Tạo tài khoản thất bại!"
+      pitch:
+        address: "Địa chỉ"
+        start_time: "Giờ bắt đầu"
+        end_time: "Giờ kết thúc"
+        city: "Tỉnh/Thành phố"
+        district: "Quận/Huyện"
+    submit:
+      user:
+        create: "Tạo tài khoản"
+        update: "Cập nhật"
+      pitch:
+        search_pitch: "Tìm kiếm sân"
   layouts:
+    admin:
+      sidebar:
+        home: "Trang chủ"
+        new: "MỚI"
+        manage: "Quản lý"
+        link1: "Link1"
+        link2: "Link2"
+      header:
+        Admin: "Admin"
+        home: "Trang chủ"
+        users: "Người dùng"
+        settings: "Thiết lập"
+        vn: "Tiếng việt"
+        en: "Tiếng anh"
+        profile: "Thông tin"
+        lock: "Khóa tài khoản"
+        logout: "Đăng xuất"
+        hello: "Xin chào: "
+      footer:
+        link: "CoreUI"
+        content1_html: "&copy; 2019 creativeLabs."
+        content2_html: "Powered by&nbsp;"
     application:
       title: "Đặt lịch sân bóng đá nhanh chóng"
     header:
@@ -12,6 +57,7 @@ vi:
       blog: "Blog"
       contact: "Liên hệ"
       language: "Ngôn ngữ"
+      english: "Tiếng Anh"
     right:
       pitch: "Sân bóng"
       search_pitch: "Tìm kiếm sân"
@@ -26,6 +72,11 @@ vi:
       news: "Bản tin"
       content2: "Hàng triệu người đến sân vận động để xem các trận thi đấu có đội bóng mà họ yêu thích, và hàng triệu người khác theo dõi qua tivi nếu không thể đến sân vận động."
   static_pages:
+    home:
+      soccer_update: "Sân bóng đá được cập nhật mới nhất"
+      address: "Địa chỉ: "
+      pitch: "Sân bóng"
+      soccer_update: "Sân bóng đá được cập nhật mới nhất"
     about:
       about: "Giới thiệu"
       text_html: "Bóng đá hay Túc cầu (tiếng Anh-Anh: Football, tiếng Anh-Mỹ: Soccer) là môn thể thao đồng đội được chơi giữa hai đội với nhau."
@@ -35,5 +86,21 @@ vi:
     contact:
       contact: "Liên hệ"
       text1: "Bóng đá hay Túc cầu (tiếng Anh-Anh: Football, tiếng Anh-Mỹ: Soccer) là môn thể thao đồng đội được chơi giữa hai đội với nhau."
-
-
+  users:
+    new:
+      update: "Cập nhật"
+      text1: "Đăng ký"
+    create:
+     welcome_user: "Đăng ký tài khoản thành công!"
+  sessions:
+    new:
+      sign_up: "Đăng ký ngay?"
+      log_in: "Đăng nhập"
+  user:
+    success: "Thành công!"
+    danger: "Thất bại!"
+  pitches:
+    search_soccer:
+      address: "Địa chỉ: "
+    index:
+      notification: "Không có sân bóng nào hợp lệ!"

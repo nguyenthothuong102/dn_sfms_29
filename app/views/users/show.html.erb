@@ -1,0 +1,17 @@
+<div class="" style="padding-top: 50px;padding-bottom: 20px;">
+  <div class="row">
+    <aside class="col-md-4" style="margin: 0 auto">
+      <section class="user_info" style="color:black;">
+        <%= form_for @user do |f| %>
+          <%= f.label :full_name %>
+          <%= f.text_field :full_name, class: "form-control" %>
+          <%= f.label :email %>
+          <%= f.email_field :email, class: "form-control" %>
+          <%= f.label :phone %>
+          <%= f.text_field :phone, class: "form-control" %>
+        <%= f.submit class: "btn btn-primary" %>
+      <% end %>
+      </section>
+    </aside>
+  </div>
+</div>

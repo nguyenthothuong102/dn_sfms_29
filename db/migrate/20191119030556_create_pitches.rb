@@ -10,8 +10,8 @@ class CreatePitches < ActiveRecord::Migration[6.0]
       t.string :address
       t.string :phone
       t.text :picture
-      t.datetime :start_time
-      t.datetime :end_time
+      t.time :start_time
+      t.time :end_time
       t.integer :limit
 
       t.timestamps

@@ -2097,7 +2097,7 @@ h1, h2, h3, h4, h5, h6 {
 .main-menu {
   padding-bottom: 20px;
   padding-top: 20px;
-  background: rgba(150, 255, 200, 0.20);
+  background: rgba(255, 217, 250,0.2);
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -2486,7 +2486,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: url(hero-bg.jpg) center;
   background-size: cover;
 }
-
+.banner-area2 {
+  background: url(banner-area3.jpg) center;
+  background-size: cover;
+}
 .banner-area .overlay-bg {
   background: rgba(4, 8, 20, 0.4);
 }
@@ -4500,4 +4503,42 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 .header-nav1 ul li{
   padding-right: 70px;
+}
+.pagination{
+  margin: 0 auto;
+  margin-left: 140px
+}
+
+#pitch_start_time_5i{
+  float:left;
+}
+.font-starttime{
+  color:red;
+  float:left;
+  width:100px;
+}
+.font-endtime{
+  color:blue;
+  float:left;
+  width:100px;
+}
+#pitch_start_time_4i{
+  float:left;
+  margin-left: 20px;
+}
+#pitch_start_time_5i{
+  float:right;
+}
+#pitch_end_time_4i{
+  float:left;
+  margin-left: 20px;
+}
+#pitch_end_time_5i{
+  float:right;
+}
+.start_time{
+  width:220px;
+}
+.end_time{
+  width:220px;
 }

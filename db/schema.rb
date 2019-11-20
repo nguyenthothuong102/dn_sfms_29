@@ -56,8 +56,8 @@ ActiveRecord::Schema.define(version: 2019_11_19_090445) do
     t.string "address"
     t.string "phone"
     t.text "picture"
-    t.datetime "start_time"
-    t.datetime "end_time"
+    t.time "start_time"
+    t.time "end_time"
     t.integer "limit"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

@@ -1,13 +1,23 @@
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active" id="flight" role="tabpanel" aria-labelledby="flight-tab">
-  <form class="form-wrap">
-    <input type="text" class="form-control" name="name" placeholder="Country " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Country'">
-    <input type="text" class="form-control" name="to" placeholder="City " onfocus="this.placeholder = ''" onblur="this.placeholder = 'City '">
-    <input type="text" class="form-control date-picker" name="start" placeholder="District " onfocus="this.placeholder = ''" onblur="this.placeholder = 'District '">
-    <input type="text" class="form-control date-picker" name="return" placeholder="Address " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Address '">
-    <input type="number" min="1" max="20" class="form-control" name="adults" placeholder="Start time " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Adults '">
-    <input type="number" min="1" max="20" class="form-control" name="child" placeholder="End time " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Child '">
-    <a href="#" class="primary-btn text-uppercase"><%= t(".search_pitch") %></a>
-  </form>
+    <%= form_for @pitch, method:"get", html: {class: "form-wrap"} do |f| %>
+      <%= f.label :city %>
+      <%= f.text_field :city, class: "form-control"%>
+      <%= f.label :district %>
+      <%= f.text_field :district, class: "form-control"%>
+      <%= f.label :address %>
+      <%= f.text_field :address, class: "form-control"%>
+      <%= f.label :start_time, class: "font-starttime" %>
+      <div class="start_time">
+        <%= f.time_select :start_time, class: "form-control" %>
+      </div>
+      <div class="clear"></div>
+      <%= f.label :end_time, class: "font-endtime" %>
+      <div class="end_time">
+        <%= f.time_select :end_time, class: "form-control" %>
+      </div>
+      <div class="clear" style="padding-top: 50px"></div>
+      <%= f.submit t(".search_pitch"), class: "btn btn-warning" %>
+    <% end %>
   </div>
 </div>
