@@ -1,0 +1,39 @@
+vi:
+  layouts:
+    application:
+      title: "Đặt lịch sân bóng đá nhanh chóng"
+    header:
+      login: "Đăng nhập"
+      register: "Đăng ký"
+      lang_vi: "Việt Nam"
+      lang_en: "Tiếng Anh"
+      home: "Trang chủ"
+      about: "Giới thiệu"
+      blog: "Blog"
+      contact: "Liên hệ"
+      language: "Ngôn ngữ"
+    right:
+      pitch: "Sân bóng"
+      search_pitch: "Tìm kiếm sân"
+    left:
+      passion: "Niềm đam mê bóng đá"
+      book_soccer: "Đặt sân bóng"
+      content1: "Nếu bạn không thực sự biết sân phù hợp cho bạn và đồng đội của bạn, hãy đến với chúng tôi!"
+      get_started: "Bắt đầu"
+    footer:
+      about: "Giới thiệu"
+      content1: "Bóng đá là môn thể thao đồng đội được chơi giữa hai đội với nhau, mỗi đội có 11 cầu thủ trên sân. Trò chơi này dùng một quả bóng và thường được chơi trên sân cỏ hình chữ nhật với hai khung thành ở hai đầu sân."
+      news: "Bản tin"
+      content2: "Hàng triệu người đến sân vận động để xem các trận thi đấu có đội bóng mà họ yêu thích, và hàng triệu người khác theo dõi qua tivi nếu không thể đến sân vận động."
+  static_pages:
+    about:
+      about: "Giới thiệu"
+      text_html: "Bóng đá hay Túc cầu (tiếng Anh-Anh: Football, tiếng Anh-Mỹ: Soccer) là môn thể thao đồng đội được chơi giữa hai đội với nhau."
+    blog:
+      blog: "Bloger"
+      text1: "Bóng đá hay Túc cầu (tiếng Anh-Anh: Football, tiếng Anh-Mỹ: Soccer) là môn thể thao đồng đội được chơi giữa hai đội với nhau."
+    contact:
+      contact: "Liên hệ"
+      text1: "Bóng đá hay Túc cầu (tiếng Anh-Anh: Football, tiếng Anh-Mỹ: Soccer) là môn thể thao đồng đội được chơi giữa hai đội với nhau."
+
+
