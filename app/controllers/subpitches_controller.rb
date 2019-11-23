@@ -7,7 +7,8 @@ class SubpitchesController < ApplicationController
   end
 
   def show
-    @comment = Comment.new
+    @ratings = Rating.joins(booking: :subpitch)
+                     .where(bookings: {subpitch_id: @subpitch.id})
   end
 
   private

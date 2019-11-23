@@ -1,0 +1,30 @@
+<div>
+  <div class="img-view-review">
+    <div class="_72vr">
+      <%= image_tag("icon-custommer.png",class: "img-custommer") %>
+      <%= link_to rating.user.full_name, "#", class: "full_name" %>
+      <span dir="ltr">
+        <span class="_3l3x">
+          <span class="content-css"><%= rating.content %></span>
+        </span>
+      </span>
+    </div>
+    <div>
+      <ul class="_6coi _6qw9" data-testid="UFI2CommentActionLinks/root">
+        <li class="_6coj">
+          <span class="_6qw6" data-testid="UFI2ReactionLink/comment">
+            <div class="_8c74 like-reply">
+              <%= link_to t(".like"), class: " _6a-y _6qw5 _77yo"%>
+              <%= link_to t(".reply"), class: " _6a-y _6qw5 _77yo"%>
+            </div>
+          </span>
+        </li>
+      </ul>
+    </div>
+    <div class="_72vr color-star like-reply2">
+      <% for a in 1..rating.star do %>
+        <i class="fa fa-star" aria-hidden="true"></i>
+      <% end %>
+    </div>
+  </div>
+</div>

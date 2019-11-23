@@ -88,6 +88,12 @@ en:
   user:
     success: "Success!"
     danger: "Failed!"
+  pitches:
+    search_soccer:
+      address: "Address: "
+    index:
+      address: "Address: "
+      notification: "There are no valid football fields!"
   subpitches:
     danger_load: "Load failure"
     danger_load_subpitch: "Load failure Subpitch"
@@ -100,6 +106,15 @@ en:
       desc: "Description: %{add}"
       content: "Comment here"
       comment: "Comment"
+      user_name: "Name"
+      rating: "Rating"
+      content: "Content"
+    rating:
+      user_name: "Name"
+      rating: "Rating"
+      content: "Conten"
+      like: "Like"
+      reply: "Reply"
     subpitch:
       name: "Name: %{add}"
       price_per_hour: "Price per hour: %{add}"
