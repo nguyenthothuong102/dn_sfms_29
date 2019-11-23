@@ -37,3 +37,4 @@ pitches.each{|pitch|
   end
 }
 
+# Rating.create(id: "1", user_id: "1", booking_id: "1", star: "3", content: "abc")

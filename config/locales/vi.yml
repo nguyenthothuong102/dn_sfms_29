@@ -88,6 +88,11 @@ vi:
   user:
     success: "Thành công!"
     danger: "Thất bại!"
+  pitches:
+    search_soccer:
+      address: "Địa chỉ: "
+    index:
+      notification: "Không có sân bóng nào hợp lệ!"
   subpitches:
     danger_load: "Tải thất bại"
     danger_load_subpitch: "Tải thất bại sân nhỏ"
@@ -100,6 +105,12 @@ vi:
       desc: "Mô tả: %{add}"
       content: "Bình luận ở đây"
       comment: "Bình luận"
+    rating:
+      user_name: "Tên người dùng"
+      rating: "Đánh giá"
+      content: "Nội dung"
+      like: "Thích"
+      reply: "Trả lời"
     subpitch:
       name: "Tên: %{add}"
       price_per_hour: "Giá mỗi giờ: %{add}"
@@ -107,3 +118,14 @@ vi:
       size: "Kích cỡ: %{add}"
       subpitch_type: "Loại sân: %{add}"
       desc: "Mô tả: %{add}"
+  like_ratings:
+    unlike_rating:
+      dislike: "Không thích"
+    like_rating:
+      like: "Thích"
+  msg:
+    danger_load_like: "Thất bại!"
+  msg:
+    unlike_rating: "Không thích thất bại!"
+  msg:
+    like_rating: "Thích thất bại!"

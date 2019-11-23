@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  has_many :ratings, dependent: :destroy
+  has_many :like_ratings, dependent: :destroy
   PARAMS = %i(full_name email phone password password_confirmation).freeze
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+(\.[a-z\d\-]+)*\.[a-z]+\z/i.freeze
 

@@ -16,4 +16,5 @@ Rails.application.routes.draw do
   resources :pitches, only: :index do
     resources :subpitches, only: %i(index show)
   end
+  resources :like_ratings
 end

@@ -1,0 +1,4 @@
+<%= form_for :likerating, url: like_ratings_path, remote: true do |f| %>
+  <%= f.hidden_field :rating_id, value: rating_id %>
+  <%= f.submit t(".like") ,class: "btn btn-outline-info" %>
+<% end %>
