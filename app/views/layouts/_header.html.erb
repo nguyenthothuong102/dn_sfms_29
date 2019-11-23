@@ -4,8 +4,14 @@
       <div class="row align-items-center">
         <div class="col-lg-6 col-sm-6 col-6 header-top-left">
           <ul>
-            <li><%= link_to t(".login")%></li>
-            <li><%= link_to t(".register")%></li>
+          <% if logged_in? %>
+            <li><%= link_to t(".logout"), logout_path %></li>
+            <li><%= link_to t(".profile"), edit_user_path(current_user) %></li>
+          <% else %>
+            <li><%= link_to t(".register"), signup_path %></li>
+            <li><%= link_to t(".login"), login_path %></li>
+            <li><%= link_to t(".connect_facebook"), "/auth/facebook" %></li>
+          <% end %>
           </ul>
         </div>
         <div class="col-lg-6 col-sm-6 col-6 header-top-right">
@@ -20,7 +26,6 @@
   <div class="container main-menu">
     <div class="row align-items-center justify-content-between d-flex">
         <div id="logo">
-          <a href="/"><img src="logo.png" alt="" title="" /></a>
         </div>
         <nav id="nav-menu-container">
           <ul class="nav-menu">

@@ -1,0 +1,21 @@
+<% provide :title, full_title(@user.full_name) %>
+
+<section class="banner-area relative">
+  <div class="overlay overlay-bg"></div>
+  <div class="container">
+    <div class="row fullscreen align-items-center justify-content-between">
+      <div calss="col-md-3"></div>
+      <div class="col-md-6 col-md-offset-3 p-top-150px">
+        <section class="user_info">
+          <%= image_tag @user.avatar.variant(resize_to_limit:
+            Settings.size_avatar),
+            class: "size_avatar gravatar" if @user.avatar.attached? %>
+          <h1>
+            <%= @user.full_name %>
+          </h1>
+        </section>
+      </div>
+      <div calss="col-md-3"></div>
+    </div>
+  </div>
+</section>

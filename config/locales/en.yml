@@ -1,4 +1,7 @@
 en:
+  users:
+    show:
+      title: "Quick schedule of football field"
   layouts:
     application:
       title: "Quick schedule of football field"
@@ -11,6 +14,9 @@ en:
       about: "About"
       blog: "Blog"
       contact: "Contact"
+      connect_facebook: Connect With Facebook
+      log_out: Logout
+      settings: Settings
     right:
       pitch: "Pitch"
       search_pitch: "Search pitch"
@@ -34,4 +40,7 @@ en:
     contact:
       contact: "Contact"
       text1: "Football or Soccer (English-English: Football, American-English: Soccer) is a team sport played between two teams."
-
+  sessions:
+    new:
+      forgot_password: Forgot password
+      log_in: Login

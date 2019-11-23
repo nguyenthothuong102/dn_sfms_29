@@ -5,9 +5,13 @@ ruby "2.6.3"
 
 gem "bootsnap", ">= 1.4.2", require: false
 gem "bootstrap-sass", "~> 3.4.1"
+gem "bcrypt", "3.1.13"
 gem "config"
 gem "jbuilder", "~> 2.7"
+gem "image_processing", "1.9.3"
 gem "jquery-rails"
+gem "omniauth"
+gem "omniauth-facebook"
 gem "puma", "~> 4.1"
 gem "rails", "~> 6.0.0"
 gem "rails-i18n"
