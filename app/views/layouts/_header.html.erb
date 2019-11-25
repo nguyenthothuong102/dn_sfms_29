@@ -1,0 +1,47 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/"><img src="../assets/logostatic.png" style="width:50px;height: 50px"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse header-nav1" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active"><%= link_to t(".home"), root_path, class: "nav-link" %></li>
+      <li class="nav-item active"><%= link_to t(".about"), about_path, class: "nav-link" %></li>
+      <li class="nav-item active"><%= link_to t(".blog"), blog_path, class: "nav-link" %></li>
+      <li class="nav-item active"><%= link_to t(".contact"), contact_path, class: "nav-link" %></li>
+      <% if logged_in? %>
+      <li class="nav-item dropdown" style="float:right;position: absolute;right:0">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <%= t(".hello") %> <%= current_user.full_name %>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <ul>
+            <li><%= link_to "Manager profile", user_path(current_user), class: "dropdown-item" %></li>
+            <li><%= link_to "Logout", logout_path, class: "dropdown-item" %></li>
+          </ul>
+        </div>
+          <% else %>
+            <ul style="position: absolute; right:200px">
+              <%= link_to t(".login"), login_path, class: "dropdown-item" %>
+            </ul>
+            <ul style="position: absolute; right:120px">
+              <%= link_to t(".register"), signup_path, class: "dropdown-item"  %>
+            </ul>
+      </li>
+      <% end %>
+    </ul>
+  </div>
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <%= t(".english") %>
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <%= link_to t(".lang_vi"), locale:"vi", class: "dropdown-item" %>
+      <div class="clear"></div>
+      <%= link_to t(".lang_en"), locale:"en", class: "dropdown-item" %>
+    </div>
+</div>
+</nav>
+</header>
