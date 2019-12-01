@@ -1,0 +1,36 @@
+<header id="header">
+  <div class="header-top">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-sm-6 col-6 header-top-left">
+          <ul>
+            <li><%= link_to t(".login") %></li>
+            <li><%= link_to t(".register") %></li>
+          </ul>
+        </div>
+        <div class="col-lg-6 col-sm-6 col-6 header-top-right">
+        <div class="header-social">
+          <li><%= link_to t(".lang_vi"), locale: "vi" %></li>
+          <li><%= link_to t(".lang_en"), locale: "en" %></li>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container main-menu">
+    <div class="row align-items-center justify-content-between d-flex">
+        <div id="logo">
+          <a href="/"><img src="logo.png" alt="" title="" /></a>
+        </div>
+        <nav id="nav-menu-container">
+          <ul class="nav-menu">
+            <li><%= link_to t(".home"), root_path %></li>
+            <li><%= link_to t(".about"), about_path %></li>
+            <li class="menu-has-children"><%= link_to t(".blog"), blog_path %>
+            </li>
+            <li><%= link_to t(".contact"), contact_path %></li>
+          </ul>
+        </nav>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,30 @@
+<div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show" id="sidebar">
+  <div class="c-sidebar-brand">
+    <%= image_tag "admin/coreui-base-white.svg" %>
+  </div>
+  <ul class="c-sidebar-nav">
+    <li class="c-sidebar-nav-item">
+      <%= link_to admin_root_path, class: "c-sidebar-nav-link" do %>
+        <svg class="c-sidebar-nav-icon">
+        </svg> <%= t ".home" %>
+        <span class="badge badge-info"><%= t ".new" %></span>
+      <% end %>
+    </li>
+    <li class="c-sidebar-nav-title"><%= t ".manage" %></li>
+    <li class="c-sidebar-nav-item">
+      <%= link_to "#", class: "c-sidebar-nav-link" do %>
+        <svg class="c-sidebar-nav-icon">
+        </svg> <%= t ".link1" %>
+      <% end %>
+    <li class="c-sidebar-nav-item">
+      <%= link_to "#", class: "c-sidebar-nav-link" do %>
+        <svg class="c-sidebar-nav-icon">
+        </svg> <%= t ".link2" %>
+      <% end %>
+    </li>
+  <%= button_tag "", type: "button", "data-target" => "_parent",
+                      "data-class" => "c-sidebar-minimized",
+                      class: "c-sidebar-minimizer c-class-toggler",
+                      onclick: "toggle_left('sidebar')",
+                      id: "toggle-left" %>
+</div>

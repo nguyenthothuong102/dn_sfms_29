@@ -1,0 +1,2 @@
+class Subpitch < ApplicationRecord
+end
