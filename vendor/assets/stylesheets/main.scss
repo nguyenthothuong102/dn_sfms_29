@@ -4503,6 +4503,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .pagination{
   padding-left:120px;
 }
+
 #myTabContent{
   margin-top:150px;
 }
@@ -4513,24 +4514,30 @@ body.mobile-nav-active #mobile-nav-toggle {
   width: 200px;
 }
 .font-starttime{
-  float:left
+  float:left;
+  width: 80px;
 }
 .font-endtime{
   float:left;
+  width: 80px;
 }
 #pitch_start_time_4i{
+  width: 40px;
   float:left;
-  margin-left: 20px;
+  margin-left: 25px;
 }
 #pitch_start_time_5i{
+  width: 40px;
   float:right;
 }
 #pitch_end_time_5i{
+  width: 40px;
   float:right;
 }
 #pitch_end_time_4i{
   float:left;
   margin-left: 25px;
+  width: 40px;
 }
 .header-social li{
   list-style-type: none;

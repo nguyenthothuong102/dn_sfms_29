@@ -11,6 +11,8 @@ module SoccerField
     config.load_defaults 6.0
     config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**',
                                 '*.{rb,yml}')]
+    config.time_zone = "Asia/Bangkok"
+    config.active_record.default_timezone = :local
     config.autoload_paths << Rails.root.join('assets')
     config.i18n.available_locales = [:en, :vi]
     config.i18n.default_locale = :en
