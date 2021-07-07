@@ -1,0 +1,112 @@
+en:
+  helpers:
+    label:
+      user:
+        full_name: "Full name"
+        email: "Email address"
+        password: "Password"
+        password_confirmation: "Confirmation password"
+      session:
+        email: "Email"
+        password: "Password"
+        danger: "Account creation failed!"
+      pitch:
+        address: "ADDRESS"
+        start_time: "Start time"
+        end_time: "End time"
+        city: "City"
+        district: "District"
+    submit:
+      user:
+        create: "Create account"
+        update: "Update"
+      pitch:
+        search_pitch: "Search pitch"
+  layouts:
+    admin:
+      sidebar:
+        home: "Home"
+        new: "NEW"
+        manage: "Manage"
+        link1: "Link1"
+        link2: "Link2"
+      header:
+        admin: "Admin"
+        home: "Home"
+        users: "Users"
+        settings: "Settings"
+        vn: "Vietnamese"
+        en: "English"
+        profile: "Profile"
+        lock: "Lock Account"
+        logout: "Logout"
+        hello: "Hello: "
+        english: "English"
+      footer:
+        link: "CoreUI"
+        content1_html: "&copy; 2019 creativeLabs."
+        content2_html: "Powered by&nbsp;"
+  layouts:
+    application:
+      title: "Quick schedule of football field"
+    header:
+      login: "Login"
+      register: "Register"
+      lang_vi: "Vietnamese"
+      lang_en: "English"
+      home: "Home"
+      about: "About"
+      blog: "Blog"
+      contact: "Contact"
+      language: "Language"
+    right_sidebar:
+      pitch: "Pitch"
+      search_pitch: "Search pitch"
+    left_sidebar:
+      passion: "Passion for football"
+      get_started: "Get Started"
+      content1: "If you do not really know the right pitch for you and your teammates, please come to us!"
+    footer:
+      about: "About agency"
+      content1: "Football is a team sport played between two teams, each team has 11 players on the field. This game uses a ball and is usually played on a rectangular grass field with two goal frames on either end."
+      news: "News"
+      content2: "Millions of people come to the stadium to watch their favorite team matches, and millions more to watch via television if they can't get to the stadium"
+  static_pages:
+    home:
+      soccer_update: "Soccer field is new updated"
+      address: "Address: "
+      pitch: "Pitch"
+      soccer_update: "Soccer field is new updated"
+      rss_feed: "rss feed"
+      name: "Soccer"
+      description: "The yard has a large, 3 mini yards, each yard for 5-7 people."
+    about:
+      about: "About"
+      text_html: "Football or Soccer (English-English: Football, American-English: Soccer) is a team sport played between two teams."
+    blog:
+      blog: "Bloger"
+      text1: "Football or Soccer (English-English: Football, American-English: Soccer) is a team sport played between two teams."
+    contact:
+      contact: "Contact"
+      text1: "Football or Soccer (English-English: Football, American-English: Soccer) is a team sport played between two teams."
+  users:
+    new:
+      update: "Update"
+      text1: "Sign in"
+    create:
+     welcome_user: "Register account successfly!"
+  sessions:
+    new:
+      sign_up: "Sign up"
+      log_in: "Log in"
+  user:
+    success: "Success!"
+    danger: "Failed!"
+  pitches:
+    search_soccer:
+      address: "Address: "
+    index:
+      address: "Address: "
+      notification: "There are no valid football fields!"
+  generate:
+    page_title: "soccer fields"
