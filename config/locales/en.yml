@@ -1,0 +1,135 @@
+en:
+  helpers:
+    label:
+      user:
+        full_name: "Full name"
+        email: "Email address"
+        password: "Password"
+        password_confirmation: "Confirmation password"
+      session:
+        email: "Email"
+        password: "Password"
+        danger: "Account creation failed!"
+    submit:
+      user:
+        create: "Create account"
+        update: "Update"
+  layouts:
+    admin:
+      sidebar:
+        home: "Home"
+        new: "NEW"
+        manage: "Manage"
+        link1: "Link1"
+        link2: "Link2"
+      header:
+        admin: "Admin"
+        home: "Home"
+        users: "Users"
+        settings: "Settings"
+        vn: "Vietnamese"
+        en: "English"
+        profile: "Profile"
+        lock: "Lock Account"
+        logout: "Logout"
+        hello: "Hello: "
+        english: "English"
+      footer:
+        link: "CoreUI"
+        content1_html: "&copy; 2019 creativeLabs."
+        content2_html: "Powered by&nbsp;"
+    application:
+      title: "Quick schedule of football field"
+    header:
+      login: "Login"
+      register: "Register"
+      lang_vi: "Vietnamese"
+      lang_en: "English"
+      home: "Home"
+      about: "About"
+      blog: "Blog"
+      contact: "Contact"
+    right:
+      pitch: "Pitch"
+      search_pitch: "Search pitch"
+    left:
+      passion: "Passion for football"
+      book_soccer: "Book soccer field"
+      content1: "If you do not really know the right pitch for you and your teammates, please come to us!"
+      get_started: "Get Started"
+    footer:
+      about: "About agency"
+      content1: "Football is a team sport played between two teams, each team has 11 players on the field. This game uses a ball and is usually played on a rectangular grass field with two goal frames on either end."
+      news: "News"
+      content2: "Millions of people come to the stadium to watch their favorite team matches, and millions more to watch via television if they can't get to the stadium"
+  static_pages:
+    home:
+      soccer_update: "Soccer field is new updated"
+      address: "Address: "
+    about:
+      about: "About"
+      text_html: "Football or Soccer (English-English: Football, American-English: Soccer) is a team sport played between two teams."
+    blog:
+      blog: "Bloger"
+      text1: "Football or Soccer (English-English: Football, American-English: Soccer) is a team sport played between two teams."
+    contact:
+      contact: "Contact"
+      text1: "Football or Soccer (English-English: Football, American-English: Soccer) is a team sport played between two teams."
+  users:
+    new:
+      update: "Update"
+      text1: "Sign in"
+    create:
+     welcome_user: "Register account successfly!"
+  sessions:
+    new:
+      sign_up: "Sign up"
+      log_in: "Log in"
+  user:
+    success: "Success!"
+    danger: "Failed!"
+  pitches:
+    search_soccer:
+      address: "Address: "
+    index:
+      address: "Address: "
+      notification: "There are no valid football fields!"
+  subpitches:
+    danger_load: "Load failure"
+    danger_load_subpitch: "Load failure Subpitch"
+    show:
+      name: "Name: %{add}"
+      price_per_hour: "Price per hour: %{add}"
+      currency: "Currency: %{add}"
+      size: "Size: %{add}"
+      subpitch_type: "Subpitch type: %{add}"
+      desc: "Description: %{add}"
+      content: "Comment here"
+      comment: "Comment"
+      user_name: "Name"
+      rating: "Rating"
+      content: "Content"
+    rating:
+      user_name: "Name"
+      rating: "Rating"
+      content: "Conten"
+      like: "Like"
+      reply: "Reply"
+    subpitch:
+      name: "Name: %{add}"
+      price_per_hour: "Price per hour: %{add}"
+      currency: "Currency: %{add}"
+      size: "Size: %{add}"
+      subpitch_type: "Subpitch type: %{add}"
+      desc: "Description: %{add}"
+  like_ratings:
+    unlike_rating:
+      dislike: "Dislike"
+    like_rating:
+      like: "Like"
+  msg:
+    danger_load_like: "False!"
+  msg:
+    unlike_rating: "Unlike false!"
+  msg:
+    like_rating: "Like false!"
