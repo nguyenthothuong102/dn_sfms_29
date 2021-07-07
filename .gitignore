@@ -1,6 +1,5 @@
 *.gem
 *.rbc
-/.config
 /coverage/
 /InstalledFiles
 /pkg/
@@ -9,11 +8,20 @@
 /test/tmp/
 /test/version_tmp/
 /tmp/
-
+/log
+!/log/.keep
+!/tmp/.keep
+/storage/*
+!/storage/.keep
+.byebug_history
+/config/master.key
+config/settings/local.yml
+config/settings/*.local.yml
+config/environments/*.local.yml
 # Used by dotenv library to load environment variables.
 # .env
-
-## Specific to RubyMotion:
+/db/*.sqlite3
+/db/*.sqlite3-journal
 .dat*
 .repl_history
 build/
@@ -32,12 +40,14 @@ build-iPhoneSimulator/
 ## Documentation cache and generated files:
 /.yardoc/
 /_yardoc/
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
 /doc/
 /rdoc/
 
 ## Environment normalization:
 /.bundle/
-/vendor/bundle
 /lib/bundler/man/
 
 # for a library or gem, you might want to ignore these files since the code is
@@ -45,6 +55,26 @@ build-iPhoneSimulator/
 # Gemfile.lock
 # .ruby-version
 # .ruby-gemset
+/test
+/.vscode
+/db/seed.rb
 
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
 .rvmrc
+/node_modules
+/public
+/Gemfile.lock
+
+/public/packs
+/public/packs-test
+/node_modules
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
+
+config/settings.local.yml
+config/settings/*.local.yml
+config/environments/*.local.yml
+
+# Ignore application configuration
+/config/application.yml

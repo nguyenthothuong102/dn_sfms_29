@@ -1,0 +1,41 @@
+<section class="banner-area relative">
+  <div class="overlay overlay-bg"></div>
+  <div class="container">
+    <div class="row fullscreen align-items-center justify-content-between">
+      <%= render "layouts/left" %>
+      <div class="col-lg-4 col-md-6 banner-right" style="padding-top: 120px">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="flight-tab" data-toggle="tab" href="#flight" role="tab" aria-controls="flight" aria-selected="true"><%= t(".pitch") %></a>
+          </li>
+        </ul>
+        <%= render "layouts/right" %>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="other-issue-area section-gap">
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="menu-content pb-70 col-lg-9">
+        <div class="title text-center">
+          <h1 class="mb-10" style="color:green"><%= t(".soccer_update") %></h1>
+        </div>
+      </div>
+    </div>
+     <div class="row">
+      <% @pitches.each do |pitch| %>
+        <div class="col-lg-3 col-md-6">
+          <div class="single-other-issue">
+            <div class="thumb img-default">
+              <%= link_to image_tag("1.png"), pitch_subpitches_path(pitch) %>
+            </div>
+            <%= link_to pitch.name, pitch_subpitches_path(pitch) %>
+            <p><%= t(".address") %><%= pitch.address %></p>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    </div>
+  <%= will_paginate @pitches %>
+</section>
